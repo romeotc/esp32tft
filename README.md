@@ -13,25 +13,28 @@ esp32tft เป็นบอร์ดสำหรับการเรียน�
   </tr>
   </table>
 
-การเชื่อมต่อบนบอร์ด
-1. TFT 9431 2.8" มีขาเชื่อมต่อดังนี้   
-  <library>
-  lv_arduino
-  #include <lvgl.h>
-  #include <TFT_eSPI.h>
- ----------------------------
-  <connection>
-  #define TFT_CS   15  // Chip select control pin
-  #define TFT_DC    0  // Data Command control pin
-  #define TFT_RST   2  // Reset pin (could connect to RST pin)
-  #define TOUCH_CS 5     // Chip select pin (T_CS) of touch screen
-  ---------------------------
-2. RFID rc522 ขาเชื่อมต่อดังนี้  
-  <library>
-  #include <SPI.h>
-  #include <MFRC522.h>
-  ---------------------------
-  <connection>
-  #define SS_PIN 26
-  #define RST_PIN 27
-  ---------------------------
+<p>การเชื่อมต่อบนบอร์ด</p>
+<ol>
+<li>TFT 9431 2.8" มีขาเชื่อมต่อดังนี้</li>
+</ol>
+<p>&nbsp; &lt;library&gt;</p>
+<p>&nbsp; lv_arduino</p>
+<p>&nbsp; #include &lt;lvgl.h&gt;</p>
+<p>&nbsp; #include &lt;TFT_eSPI.h&gt;</p>
+<p>&nbsp;----------------------------</p>
+<p>&nbsp; &lt;connection&gt;</p>
+<p>&nbsp; #define TFT_CS&nbsp;&nbsp; 15&nbsp; // Chip select control pin</p>
+<p>&nbsp; #define TFT_DC&nbsp;&nbsp;&nbsp; 0&nbsp; // Data Command control pin</p>
+<p>&nbsp; #define TFT_RST&nbsp;&nbsp; 2&nbsp; // Reset pin (could connect to RST pin)</p>
+<p>&nbsp; #define TOUCH_CS 5&nbsp;&nbsp;&nbsp;&nbsp; // Chip select pin (T_CS) of touch screen</p>
+<p>&nbsp; ---------------------------</p>
+<ol start="2">
+<li>RFID rc522 ขาเชื่อมต่อดังนี้</li>
+</ol>
+<p>&nbsp; &lt;library&gt;</p>
+<p>&nbsp; #include &lt;SPI.h&gt;</p>
+<p>&nbsp; #include &lt;MFRC522.h&gt;</p>
+<p>&nbsp; ---------------------------</p>
+<p>&nbsp; &lt;connection&gt;</p>
+<p>&nbsp; #define SS_PIN 26</p>
+<p>&nbsp; #define RST_PIN 27</p>
