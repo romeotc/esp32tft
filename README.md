@@ -13,5 +13,25 @@ esp32tft เป็นบอร์ดสำหรับการเรียน�
   </tr>
   </table>
 
-
-
+การเชื่อมต่อบนบอร์ด
+1. TFT 9431 2.8" มีขาเชื่อมต่อดังนี้   
+  <library>
+  lv_arduino
+  #include <lvgl.h>
+  #include <TFT_eSPI.h>
+ ----------------------------
+  <connection>
+  #define TFT_CS   15  // Chip select control pin
+  #define TFT_DC    0  // Data Command control pin
+  #define TFT_RST   2  // Reset pin (could connect to RST pin)
+  #define TOUCH_CS 5     // Chip select pin (T_CS) of touch screen
+  ---------------------------
+2. RFID rc522 ขาเชื่อมต่อดังนี้  
+  <library>
+  #include <SPI.h>
+  #include <MFRC522.h>
+  ---------------------------
+  <connection>
+  #define SS_PIN 26
+  #define RST_PIN 27
+  ---------------------------
