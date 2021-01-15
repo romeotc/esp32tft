@@ -23,7 +23,7 @@ esp32tft เป็นบอร์ดสำหรับการเรียน�
       LVGL DEMO
     </td>
     <td>
-      < a href="https://www.youtube.com/watch?v=7v4SGbpQaqw">Video</a>/
+      <a href="https://www.youtube.com/watch?v=7v4SGbpQaqw">Video</a>/
       <a href="https://github.com/romeotc/esp32tft/tree/main/01.ESP32_TFT_eSPI_Slider">Source</a>
     </td>
   </tr>
